@@ -1,0 +1,15 @@
+
+<div>
+<div *ngFor="let info of filmsInfo">
+    <h2>{{info.section}} </h2>
+<div *ngFor="let film of info.films" >
+
+    <h2>{{film.title}} </h2>
+
+    <div>
+        <img src="{{film.image.src}}" alt="{{film.title}}"/>
+
+       </div>
+    </div>
+   </div>
+</div>
